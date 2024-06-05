@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Login</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script_index_main.js" defer></script>
+</head>
+<body>
+    <h1>Bank System Login</h1>
+    <section>
+        <div>
+            <div class="form-row">
+                <label for="account_id">Acount Number:</label>
+                <input type="number" id="account_id" min="1" name="account_id" required>
+            </div>
+            <div class="form-row">
+                <label for="secret_key">Secret Key:</label>
+                <input type="password" id="secret_key" name="secret_key" required>
+            </div>
+            <button id="submitLogin" type="button">Submit</button>
+        </div>
+        <div id="toastMessage" class="toast hidden"></div>
+    </section>   
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script_account_info.js" defer></script>
+</head>
+<body>
+    <h3>Logged In Successfully</h3>
+        <p id="account_id">Account ID: </p>
+        <p id="client_name">Client Name: </p>
+        <p id="client_email">Client Email: </p>
+        <p id="client_address">Client Address: </p>
+        <p id="account_balance">Account Balance: </p>
+        <p id="account_type">Account Type: </p>
+    <button type="button" id="sendMoneyBtn" class="btn">Send Money</button> 
+    <button type="button" id="showTransactionHistory" class="btn">Show transactions</button>             
+    <div id="sendMoneyPanel" style="display: none;">
+        <div>
+            <label for="receiver_id">Receiver account ID:</label>
+            <input type="number" id="receiver_id" min="1" name="receiver_id" required>
+        </div>
+        <div>
+            <label for="money_amount">Money amount:</label>
+            <input type="number" id="money_amount" name="money_amount" required>
+        </div>
+        <div>
+            <label for="password">Submit your password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button id="submitMoney" type="button">Submit</button>
+        </div>
+    </div>
+    <div id="showTransactionHtistoryPanel" style="display: none;">
+        <!-- Transactions table will be appended here by JavaScript -->
+    </div>
+    <div id="toastMessage" class="toast hidden"></div>
+
+</body>
+</html>
